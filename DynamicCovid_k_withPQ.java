@@ -4,15 +4,16 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class DynamicCovid_k_withPQ {
-	public static void main(String[] args) throws IOException {
+	
+	    public static void main(String[] args) throws IOException {
     	
-    	Scanner in = new Scanner(System.in);
+    	    Scanner in = new Scanner(System.in);
     	
-    	//will read from cities.txt
-    	String line = null;
-		BufferedReader br = new BufferedReader(new FileReader("cities.txt"));
+    	    //will read from cities.txt
+    	    String line = null;
+	    BufferedReader br = new BufferedReader(new FileReader("cities.txt"));
 		
-		//our queue
+	    //our queue
 	    ReversePQ pq = new ReversePQ();
 	    
 	    //user's input
@@ -24,7 +25,7 @@ public class DynamicCovid_k_withPQ {
 	    
 	    while((line = br.readLine()) != null){   
 	    	
-			City city = new City(); 
+		City city = new City(); 
 			
 	    	String[] splitline = line.split("\\s+"); 
 	    	
